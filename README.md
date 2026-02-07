@@ -6,15 +6,13 @@ This small Python script computes the expected value of the maximum result obtai
 
 If you roll **d** dice and each die has **N** sides, and you **keep only the highest value**, the expected value is:
 
-\[
-E[\max] = \sum_{n=1}^{N} n \cdot P(\text{max} = n)
-\]
+The expected value is:
+
+E[max] = sum_{n=1..N} n * P(max = n)
 
 where
 
-\[
-P(\text{max} = n) = \left(\frac{n}{N}\right)^d - \left(\frac{n-1}{N}\right)^d
-\]
+P(max = n) = (n/N)^d − ((n−1)/N)^d
 
 ## Usage
 
